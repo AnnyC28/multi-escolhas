@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+ES:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+
+}
+
+:root{
+    --violeta-russo: #231942ff;
+--ultra-violeta: #5e548eff;
+--violeta-africana: #9f86c0ff;
+--lilas: #be95c4ff;
+--rosa-lavanda: #e0b1cbff;
+--fonte-texto:"Playwrite AU VIC", cursive;
+--fonte-titulo:"Playwrite ES", cursive;
+}
