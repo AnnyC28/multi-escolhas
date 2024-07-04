@@ -16,16 +16,21 @@ const perguntas = [
     {
         enunciado: "Depois de 2 anos você descobre que seu filho mais novo possui Transtorno do Espectro Autista de grau 2, onde precisa de um suporte moderado para poder estudar e até estar em ambientes desconhecidos, o que faz perante essa situação:",
         alternativas: [
-            "Buscar apoio para meu filho para quando ele precisar ir para a escola e posteriormente para o colégio estadual, tenha uma supervisão e um cuidado especial com ele, para quando ele quiser entrar no mercado de trabalho e exercer uma profissão, possa estar acostumado com o comportamento de pessoas de fora.",
-            "Alternativa 2"
+            {
+            texto: "Buscar apoio para meu filho.",
+            afirmacao: "Para quando ele precisar ir para a escola e posteriormente para o colégio estadual, tenha uma supervisão e um cuidado especial com ele, para quando ele quiser entrar no mercado de trabalho e exercer uma profissão, possa estar acostumado com o comportamento de pessoas de fora"},
+
+            {
+            texto: "Não buscar ajuda de especialistas e tentar resolver em casa",
+            afirmacao: "eu sei que ele pode ter o estilo de vida de crianças normais apenas ignorando as diferenças, e as pessoas também precisam entender que ele é especial e precisam buscar entender o comportamento dele."}
 
         ]
 
     },
     {
-        enunciado: "Pegunta 3",
+        enunciado: "Ao fazer 18 anos, seu filho está no último ano do ensino médio e quer entrar no mercado de trabalho, mas não é qualquer ambiente de trabalho que aceite ele, por conta do TEA, mas o sonho dele é ir para as Forças Armadas, o que fazer nessa situação",
         alternativas: [
-            "Alternativa 1",
+            "Buscar",
             "Alternativa 2"
 
         ]

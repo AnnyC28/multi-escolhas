@@ -16,3 +16,28 @@
 --fonte-texto:"Playwrite AU VIC", cursive;
 --fonte-titulo:"Playwrite ES", cursive;
 }
+ body{
+    background-color: var(--violeta-russo);
+    color: var(--ultra-violeta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
+
+ }
+
+ .caixa-principal{
+    background-color: var(--violeta-africana);
+    width: 90%;
+    min-width: 600px;
+    text-align: center;
+    padding: 20px;
+
+ }
+ .titulo{
+    color: var(--lilas);
+    font-family: var(--fonte-titulo);
+
+ }
+ 
