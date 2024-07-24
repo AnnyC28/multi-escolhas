@@ -7,8 +7,14 @@ const perguntas = [
     {
         enunciado: "Você é um professor de um colégio publico e recebeu uma proposta para trabalhar em uma turma onde possui três alunos atípios: uma autista, uma aluna surda e um aluno com TDAH:",
         alternativas: [
-            "Aceitar o emprego, pois posso buscar entender o compostamento de cada um e posso trazer uma educação de qualidade para cada aluno com sua necessidade especial, independente de precisar me dedicar mais ao encaixar todos no plano de estudo.",
-            "Não vou aceitar, pois não posso deixar de entregar uma aula simples e gastar meu tempo com alunos diferentes para agradar o Sistema Educacional e/ou mães que querem deixar seus filhos no colégio público ao invés de bancar um estudo particular para cada um de seus filhos atípicos."
+            {
+            texto: "Aceitar o emprego.",
+            afirmacao: "Pois posso buscar entender o compostamento de cada um e posso trazer uma educação de qualidade para cada aluno com sua necessidade especial, independente de precisar me dedicar mais ao encaixar todos no plano de estudo."},
+        
+            {
+            texto: "Não vou aceitar.",
+            afirmacao: "Pois não posso deixar de entregar uma aula simples e gastar meu tempo com alunos diferentes para agradar o Sistema Educacional e/ou mães que querem deixar seus filhos no colégio público ao invés de bancar um estudo particular para cada um de seus filhos atípicos."}
+            
 
         ]
 
@@ -21,8 +27,8 @@ const perguntas = [
             afirmacao: "Para quando ele precisar ir para a escola e posteriormente para o colégio estadual, tenha uma supervisão e um cuidado especial com ele, para quando ele quiser entrar no mercado de trabalho e exercer uma profissão, possa estar acostumado com o comportamento de pessoas de fora"},
 
             {
-            texto: "Não buscar ajuda de especialistas e tentar resolver em casa",
-            afirmacao: "eu sei que ele pode ter o estilo de vida de crianças normais apenas ignorando as diferenças, e as pessoas também precisam entender que ele é especial e precisam buscar entender o comportamento dele."}
+            texto: "Não buscar ajuda de especialistas e tentar resolver em casa.",
+            afirmacao: "Eu sei que ele pode ter o estilo de vida de crianças normais apenas ignorando as diferenças, e as pessoas também precisam entender que ele é especial e precisam buscar entender o comportamento dele."}
 
         ]
 
@@ -30,17 +36,28 @@ const perguntas = [
     {
         enunciado: "Ao fazer 18 anos, seu filho está no último ano do ensino médio e quer entrar no mercado de trabalho, mas não é qualquer ambiente de trabalho que aceite ele, por conta do TEA, mas o sonho dele é ir para as Forças Armadas, o que fazer nessa situação",
         alternativas: [
-            "Buscar",
-            "Alternativa 2"
+
+            {
+            texto: "Buscar algum lugar no qual ele possa realizar o sonho dele e que ele possa fazer algo significativo.",
+            afirmacao: "Pois quero fazer o possivel para meu filho se encaixar e também ser aceito em seu meio social."},
+
+            {
+            texto: "Fazer ele se convencer que não pode fazer algo desse tipo.",
+            afirmacao: "Porque não é normal para um serviço tão complicado igual e alistar nas Força Armadas, então o melhor seria desistir e continuar deixando as pessoas terem um esteriótipo errado de pessoas com TEA."}
 
         ]
 
     },
     {
-        enunciado: "Pegunta 4",
+        enunciado: "",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+
+            {
+            texto: "",
+            afirmacao: ""},
+
+            {
+            texto:"Alternativa" ,},
 
         ]
 
@@ -58,16 +75,47 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 
-function mostraPergunta(){
+function mostraPergunta() {
+    if(atual >= perguntas.length){
+        mostreResultado();
+        return;
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent ="";
     mostraAlternativas();
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
+    for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click",function(){
+            atual++;
+            mostraPergunta();
+        })
         caixaAlternativas.appendChild(botaoAlternativas)
     }
 }
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+function mostreResultado (){
+    caixaPerguntas.textContent = " Em 2049 ...";
+    textoResultados.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+
+
+
+
+
+
+
+mostraPergunta();
