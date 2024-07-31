@@ -5,7 +5,7 @@ const caixaResultado = document.querySelector('.caixaResultado');
 const textoResultados = document.querySelector('.textoResultados');
 const perguntas = [
     {
-        enunciado: "Você é um professor de um colégio publico e recebeu uma proposta para trabalhar em uma turma onde possui três alunos atípios: uma autista, uma aluna surda e um aluno com TDAH:",
+        enunciado: "Você é um(a) professor(a) de um colégio publico e recebeu uma proposta para trabalhar em uma turma onde possui três alunos atípios: uma autista, uma aluna surda e um aluno com TDAH:",
         alternativas: [
             {
             texto: "Aceitar o emprego.",
@@ -20,7 +20,7 @@ const perguntas = [
 
     },
     {
-        enunciado: "Depois de 2 anos você descobre que seu filho mais novo possui Transtorno do Espectro Autista de grau 2, onde precisa de um suporte moderado para poder estudar e até estar em ambientes desconhecidos, o que faz perante essa situação:",
+        enunciado: "Você é casado(a) e possui 3 filhos, mas após seu filho mais novo completar 2 anos, descobre que ele possui Transtorno do Espectro Autista de grau 2, onde precisa de um suporte moderado para poder estudar e até estar em ambientes desconhecidos, o que faz perante essa situação:",
         alternativas: [
             {
             texto: "Buscar apoio para meu filho.",
@@ -34,7 +34,7 @@ const perguntas = [
 
     },
     {
-        enunciado: "Ao fazer 18 anos, seu filho está no último ano do ensino médio e quer entrar no mercado de trabalho, mas não é qualquer ambiente de trabalho que aceite ele, por conta do TEA, mas o sonho dele é ir para as Forças Armadas, o que fazer nessa situação",
+        enunciado: "Ao fazer 18 anos, seu filho está no último ano do ensino médio e quer entrar no mercado de trabalho, mas não é qualquer ambiente de trabalho que aceite ele, por conta do TEA, mas o sonho dele é ir para as Forças Armadas, o que fazer nessa situação?",
         alternativas: [
 
             {
@@ -49,24 +49,32 @@ const perguntas = [
 
     },
     {
-        enunciado: "",
+        enunciado: "Após completar 23 anos, você se casou, mas sua esposa é surda(você aprendeu a se comunicar com ela aprendendo o básico de libras e escrevendo em um caderno). Ela sonha em ter filhos, mas a chance de seus filhos nascerem com surdez parcial e/ou total são altas, o que você faria? ",
         alternativas: [
 
             {
-            texto: "",
-            afirmacao: ""},
+            texto: "Ajudo ela a realizar esse sonho.",
+            afirmacao: "Não importa as dificuldades das quais nossos filhos ou nós tenhamos que passar, eu a amo e caso eles tenham problemas de audição, eu irei fazer com que tenham a melhor educação e irei buscar o melhor apoio possível, e também irei ajudar ela em qualquer atividade em relação as crianças."},
 
             {
-            texto:"Alternativa" ,},
+            texto:"Não vou ter filhos com ela, mas sim, irei buscar formas de adotar um filho.",
+            afirmacao:"Não quero ter a possibilidade de ter filhos surdos para me preocupar em viver procurando um apoio para eles até que se tornem independentes, se for para ter filhos e realizar o sonho dela, uma adoção seria o melhor."},
 
         ]
 
     },
     {
-        enunciado: "Pegunta 5",
+        enunciado: "",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+
+            {
+            texto:"",
+            afirmacao: ""},
+            
+            
+            {
+            texto:"",
+            afirmacao:""},
 
         ]
 
