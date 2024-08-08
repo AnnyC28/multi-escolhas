@@ -64,17 +64,17 @@ const perguntas = [
 
     },
     {
-        enunciado: "",
+        enunciado: "Você foi chamado para ajudar em uma casa de apoio beneficente de pessoas com Transtorno do Espectro Autista, Síndrome de Down e pessoas surdas, sem fins lucrativos, para auxiliar nos estudos, fazer planejamentos e ensinar a outras pessoas sobre como auxiliar esse grupo de pessoas, o que você faz?",
         alternativas: [
 
             {
-            texto:"",
-            afirmacao: ""},
+            texto:"Aceito o trabalho.",
+            afirmacao: "Esse trabalho, apesar de não ser lucrativo, tem um valor significativo para mim, pois sempre quis ajudar de alguma forma as pessoas ao meu redor, principalmente esse grupo específico de pessoas, então não será problema."},
             
             
             {
-            texto:"",
-            afirmacao:""},
+            texto:"Não aceito o trabalho.",
+            afirmacao:"Não acho que seja muito gratificante trabalhar com algo que não irá me render dinheiro ou algum reconhecimento importante, "},
 
         ]
 
