@@ -7,14 +7,14 @@
 
 }
 
-:root{
+:root {
     --violeta-russo: #231942ff;
---ultra-violeta: #5e548eff;
---violeta-africana: #9f86c0ff;
---lilas: #be95c4ff;
---rosa-lavanda: #e0b1cbff;
---fonte-texto:"Playwrite AU VIC", cursive;
---fonte-titulo:"Playwrite ES", cursive;
+    --ultra-violeta: #5e548eff;
+    --violeta-africano: #9f86c0ff;
+    --lilas: #be95c4ff;
+    --rosa-lavanda: #e0b1cbff;
+    --fonte-texto:"Playwrite AU VIC", cursive;
+    --fonte-titulo:"Playwrite ES", cursive;
 }
  body{
     background-color: var(--violeta-russo);
@@ -24,24 +24,21 @@
     align-items: center;
     min-height: 100vh;
     font-family: var(--fonte-texto);
-
  }
-
  .caixa-principal{
     background-color: var(--violeta-africana);
     width: 90%;
     min-width: 600px;
     text-align: center;
     padding: 20px;
-
  }
  .titulo{
     color: var(--lilas);
     font-family: var(--fonte-titulo);
 
  }
- 
-button{
+
+ .button{
    background-color: var(--violeta-russo);
    color: var(--violeta-africana);
    border: none;
@@ -51,13 +48,8 @@ button{
    margin: 10px auto;
 }
 
-button:hover{
+.button:hover{
    background-color: var(--rosa-lavanda);
-   
+
+
 }
-
-
-
-
-
-
